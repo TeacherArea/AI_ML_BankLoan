@@ -2,8 +2,8 @@
 
 Detta projekt demonstrerar hur en enkel maskininlärningsmodell kan byggas med Python och `scikit-learn`. Exemplet används i undervisning Artificeill Intelligens 1 på gymnasienivå för att introducera elever till grundläggande koncept inom
 
-- datastrukturer och tabeller (`pandas`)
-- numeriska simuleringar (`numpy`)
+- datastrukturer och tabeller (pandas)
+- numeriska simuleringar (numpy)
 - maskininlärning
 - tränings- och testdata
 - klassificering
@@ -12,7 +12,6 @@ Detta projekt demonstrerar hur en enkel maskininlärningsmodell kan byggas med P
 
 Syftet är inte att skapa en realistisk kreditmodell, utan att stegvis utforska hur kod kan användas för att beskriva och analysera data.
 
----
 
 ## Vad modellen gör
 
@@ -31,9 +30,8 @@ Beslutet baseras egentligen på två faktorer:
 
 Lite slumpmässigt brus läggs också till för att simulera att verklig data ofta innehåller variationer och osäkerhet.
 
----
 
-## Pedagogiska detaljer
+## Några pedagogiska noteringar
 
 Variabeln age används inte när lånebeslutet genereras. Likaså heller inte print(data) eller 
 
@@ -52,15 +50,13 @@ Detta öppnar för diskussioner om:
 - feature selection
 - korrelation kontra kausalitet
 
----
 
 ## Modell
 
-Modellen som intialt används är ett beslutsträd (`DecisionTreeClassifier`) med:
+Modellen som används är ett beslutsträd (DecisionTreeClassifier) med initialt max_depth = 3
 
-```python
-max_depth = 3
 
 ## Använda bibliotek
+pandas numpy scikit-learn matplotlib, för export joblib (senare)
 
 För att använda: pip install pandas numpy scikit-learn matplotlib. Uppdatera eventuellt (python.exe -m pip install --upgrade pip).
