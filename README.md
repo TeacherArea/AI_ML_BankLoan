@@ -18,24 +18,24 @@ Syftet är inte att skapa en realistisk kreditmodell, utan att stegvis utforska 
 
 Programmet genererar syntetisk data för 500 personer:
 
-- årsinkomst (`income`)
-- ålder (`age`)
-- kreditvärdighet (`credit_score`)
+- årsinkomst
+- ålder
+- kreditvärdighet
 
-Utifrån dessa variabler skapas ett enkelt beslut om ett lån ska beviljas eller avslås (`loan_approved`).
+Utifrån dessa variabler skapas ett enkelt beslut om ett lån ska beviljas eller avslås.
 
 Beslutet baseras egentligen på två faktorer:
 
 - inkomsten måste vara tillräckligt hög
 - kreditvärdigheten måste vara över en viss nivå
 
-Lite slumpmässigt brus (`noise`) läggs också till för att simulera att verklig data ofta innehåller variationer och osäkerhet.
+Lite slumpmässigt brus läggs också till för att simulera att verklig data ofta innehåller variationer och osäkerhet.
 
 ---
 
-## Viktig pedagogisk detalj
+## Pedagogiska detaljer
 
-Variabeln `age` används inte när lånebeslutet genereras.
+Variabeln age används inte när lånebeslutet genereras. Likaså heller inte print(data) eller 
 
 Detta är avsiktligt, då syftet är att elever själva ska upptäcka detta och undersöka
 
@@ -60,3 +60,7 @@ Modellen som intialt används är ett beslutsträd (`DecisionTreeClassifier`) me
 
 ```python
 max_depth = 3
+
+## Använda bibliotek
+
+För att använda: pip install pandas numpy scikit-learn matplotlib. Uppdatera eventuellt (python.exe -m pip install --upgrade pip).

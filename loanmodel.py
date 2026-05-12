@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as ui
 from sklearn import tree
 
 np.random.seed(42)
@@ -43,13 +43,11 @@ predictions = model.predict(x_test)
 
 print("Accuracy:", accuracy_score(y_test, predictions))
 print("Confusion matrix:")
-print("[kolumn 1 = 0, kolumn 2 = 1]:")
-print("[post 1 = får avslag, post 2 = beviljas lån]:")
 print(confusion_matrix(y_test, predictions))
 
-plt.figure(figsize = (10, 6))
-tree.plot_tree(model,
-           feature_names=x.columns,
-           class_names=["Denied", "Approved"],
-           filled=True)
-plt.show()
+# ui.figure(figsize = (10, 6))
+# tree.plot_tree(model,
+#           feature_names=x.columns,
+#           class_names=["Denied", "Approved"],
+#           filled=True)
+# ui.show()
