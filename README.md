@@ -33,14 +33,16 @@ Lite slumpmässigt brus läggs också till för att simulera att verklig data of
 
 ## Några pedagogiska noteringar
 
-Variabeln age används inte när lånebeslutet genereras. Likaså heller inte print(data) eller 
+Variabeln age används inte när lånebeslutet genereras. Likaså heller inte print(data) eller uppvisning av beslutsträd
 
-Detta är avsiktligt, då syftet är att elever själva ska upptäcka detta och undersöka
+Detta är avsiktligt. Det ger lärare möjlighet att introducera dessa moment och underlättare syftet är att elever själva ska upptäcka frånvaron av age, samt undersöka
 
+- tabell som genereras
 - vilka variabler modellen faktiskt använder
 - hur irrelevanta variabler kan finnas i data, och vad som kan hända när de blir aktiva
 - hur ett beslutsträd väljer de mest informativa egenskaperna
 - varför vissa variabler ignoreras trots att de finns med i datasetet
+- introduceras till beslutsträd under lärares överinseende
 
 Detta öppnar för diskussioner om:
 
@@ -49,6 +51,7 @@ Detta öppnar för diskussioner om:
 - bias
 - feature selection
 - korrelation kontra kausalitet
+- beslutsträd, hur de kan användas för analys och vilka slag av modeller som generar meningsfulla sådana
 
 
 ## Modell
